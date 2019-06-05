@@ -1,0 +1,11 @@
+1/ var 
+DECLARE variable with type
+false -> boolean,
+0 -> intergers,
+0.0 -> floats,
+"" -> strings,
+nil -> pointers, functions, interfaces, slices, channels, maps
+
+var z int -> z =0
+var z string -> z=""
+
