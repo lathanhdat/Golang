@@ -9,6 +9,7 @@ func main() {
 	go send5(even, odd, quit)
 	receive5(even, odd, quit)
 }
+
 func receive5(e, o <-chan int, q <-chan int) {
 	for {
 		select {
@@ -31,7 +32,7 @@ func receive5(e, o <-chan int, q <-chan int) {
 func send5(e, o chan<- int, q chan<- int) {
 	for i := 0; i < 100; i++ {
 		if i%2 == 0 {
-			e <- i
+			e <- iz
 		} else {
 			o <- i
 		}
